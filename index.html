@@ -4,16 +4,30 @@
     <title>Jonathan's Fiber Resume</title>
 </head>
 <body>
-    <object data="JAH_Fiber_Optic_Resume.pdf" type="application/pdf" width="100%" height="500px">
-        <!-- Fallback text -->
-        <p>Your browser does not support the object tag. You can <a href="JAH_Fiber_Optic_Resume.pdf">download the PDF directly</a>.</p>
+    <h1>My Document</h1>
+    
+    <!-- Using <iframe> for desktop support with robust mobile fallback -->
+    <iframe src="JAH_Fiber_Optic_Resume.pdf" width="100%" height="1000px">
+        <!-- The content inside the iframe tags displays if the browser can't render the iframe source -->
+        <p>
+            Your browser does not support inline PDFs. 
+            Please <a href="JAH_Fiber_Optic_Resume.pdf" download>click here to download the PDF</a> and open it in your device's PDF viewer.
+        </p>
+    </iframe>
+
+    <!-- Alternative using the object tag fallback -->
+    <!-- 
+    <object data="your_document.pdf" type="application/pdf" width="100%" height="500px">
+        <p>
+            Your device can't display this PDF inline. 
+            <a href="your_document.pdf" download>Download the file here</a>.
+        </p>
     </object>
+    -->
 </body>
 </html>
 
 
-
-##<object data="myfile.pdf" width="1000" height="1000" type='application/pdf'/> 
 
 
 
